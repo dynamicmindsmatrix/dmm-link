@@ -53,6 +53,12 @@ footer {
   color: #94a3b8;
 }
 
+.links a i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
 /* 📱 Mobile screen adjustments */
 @media (max-width: 480px) {
   .container {
@@ -72,8 +78,3 @@ footer {
     padding: 0.6rem;
   }
   }
-.links a i {
-  margin-right: 8px;
-  font-size: 1.1rem;
-  vertical-align: middle;
-}
