@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Minds Matrix</title>
+  <title>Dynamic Minds Matrix | Contact</title>
 
-  <!-- ✅ Link Preview Meta Tags -->
+  <!-- Meta Tags for Social Media Preview -->
   <meta property="og:title" content="Dynamic Minds Matrix" />
   <meta property="og:description" content="Own Your Power. Master Your Path." />
   <meta property="og:image" content="https://raw.githubusercontent.com/murerwaduncan/dmm-link/main/og-image.jpg" />
@@ -21,62 +21,82 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #e6f3ff; /* Light blue */
+      background: #f2f9ff;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
     }
 
-    .container {
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px;
-      max-width: 400px;
-      width: 100%;
+    .header {
+      background: linear-gradient(to right, #008080, #00a3a3); /* Teal Blue gradient */
+      padding: 40px 20px 20px 20px;
       text-align: center;
     }
 
-    h1 {
-      margin-bottom: 10px;
-      color: #0066cc;
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: black; /* DYNAMIC MINDS MATRIX in Black */
     }
 
-    p {
-      margin-bottom: 20px;
-      font-size: 14px;
+    .tagline {
+      margin-top: 10px;
+      color: indigo; /* Purple-Blue */
+      font-style: italic;
+      font-weight: 500;
     }
 
-    a.button {
-      display: block;
-      margin: 10px 0;
-      padding: 12px;
+    .container {
+      padding: 30px 20px;
+      max-width: 480px;
+      margin: auto;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
       background: #0066cc;
       color: white;
-      text-decoration: none;
+      padding: 12px 18px;
       border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s;
+      margin: 10px 0;
+      transition: background 0.3s ease;
     }
 
-    a.button:hover {
+    .button:hover {
       background: #004c99;
+    }
+
+    .checkmark {
+      color: #00e5ff; /* Light Blue / Cyan */
+      font-size: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      color: #001f4d; /* Navy / Dark Blue */
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Dynamic Minds Matrix</h1>
-    <p>Own Your Power. Master Your Path.</p>
+  <div class="header">
+    <h1>DYNAMIC MINDS MATRIX</h1>
+    <p class="tagline">Own Your Power. Master Your Path.</p>
+  </div>
 
-    <a class="button" href="tel:+254759947456">📞 Call Me</a>
-    <a class="button" href="https://wa.me/254759947456" target="_blank">💬 WhatsApp</a>
-    <a class="button" href="https://www.youtube.com/@DMMInspiration" target="_blank">📺 YouTube</a>
-    <a class="button" href="https://www.dynamicmindsmatrix.com" target="_blank">🌐 Website</a>
+  <div class="container">
+    <a class="button" href="tel:+254759947456"><span class="checkmark">✔</span> Call: +254 759 947 456</a>
+    <a class="button" href="https://wa.me/254759947456" target="_blank"><span class="checkmark">✔</span> WhatsApp Chat</a>
+    <a class="button" href="https://www.youtube.com/@DMMInspiration" target="_blank"><span class="checkmark">✔</span> YouTube: @DMM Inspiration</a>
+    <a class="button" href="https://www.dynamicmindsmatrix.com" target="_blank"><span class="checkmark">✔</span> Visit Website</a>
+  </div>
+
+  <div class="footer">
+    Powered by Dynamic Minds Matrix
   </div>
 </body>
 </html>
