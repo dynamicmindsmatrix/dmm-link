@@ -16,22 +16,14 @@
       --navy: #000080;
       --cyan: #00bcd4;
       --indigo: indigo;
-      --light-bg: #ffffff;
-      --light-text: #000000;
-      --dark-bg: #121212;
-      --dark-text: #ffffff;
+      --dark-white: #e8e8e8;
+      --text-primary: #111111;
     }body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--light-bg);
-  color: var(--light-text);
+  background: #f2f2f2;
+  color: var(--text-primary);
   line-height: 1.6;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-body.dark-mode {
-  background: var(--dark-bg);
-  color: var(--dark-text);
 }
 
 .top-section {
@@ -40,38 +32,12 @@ body.dark-mode {
   text-align: center;
   color: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: relative;
-}
-
-.toggle-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: white;
-  color: var(--teal);
-  border: none;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.toggle-btn:hover {
-  background: #e0f7fa;
 }
 
 .brand-name {
   font-size: 2.8rem;
   font-weight: 700;
   color: black;
-}
-
-body.dark-mode .brand-name {
-  color: white;
 }
 
 .tagline {
@@ -92,22 +58,16 @@ body.dark-mode .brand-name {
 }
 
 .card {
-  background: #f8f8f8;
+  background: var(--dark-white);
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   min-width: 280px;
   max-width: 360px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 0.8s ease both;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .card i {
@@ -120,6 +80,12 @@ body.dark-mode .brand-name {
 .card strong {
   color: var(--navy);
   display: block;
+  font-size: 1.05rem;
+}
+
+.card span {
+  font-size: 1.05rem;
+  color: var(--text-primary);
 }
 
 .card a {
@@ -150,48 +116,43 @@ footer {
   }
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
   </style>
 </head>
 <body>
   <div class="top-section">
-    <button class="toggle-btn" onclick="toggleTheme()">
-      <i class="fas fa-adjust"></i> Toggle Mode
-    </button>
     <div class="brand-name">DYNAMIC MINDS MATRIX</div>
     <div class="tagline">Own Your Power. Master Your Path.</div>
   </div>  <div class="main">
     <div class="card">
       <i class="fas fa-phone"></i>
-      <div><strong>Tel:</strong> +254759947456</div>
+      <div>
+        <strong>Call Us:</strong>
+        <span>+254759947456</span>
+      </div>
     </div>
     <div class="card">
       <i class="fab fa-whatsapp"></i>
-      <div><strong>WhatsApp:</strong> +254759947456</div>
+      <div>
+        <strong>WhatsApp:</strong>
+        <span>+254759947456</span>
+      </div>
     </div>
     <div class="card">
       <i class="fab fa-youtube"></i>
-      <div><strong>YouTube:</strong> DMM Inspiration</div>
+      <div>
+        <strong>YouTube:</strong>
+        <span>DMM Inspiration</span>
+      </div>
     </div>
     <div class="card">
       <i class="fas fa-globe"></i>
-      <div><strong>Website:</strong> <a href="https://www.dynamicmindsmatrix.com" target="_blank">www.dynamicmindsmatrix.com</a></div>
+      <div>
+        <strong>Website:</strong>
+        <a href="https://www.dynamicmindsmatrix.com" target="_blank">www.dynamicmindsmatrix.com</a>
+      </div>
     </div>
   </div>  <footer>
     &copy; 2025 Dynamic Minds Matrix. All rights reserved.
-  </footer>  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script></body>
-  </html>
+  </footer>
+</body>
+        </html>
