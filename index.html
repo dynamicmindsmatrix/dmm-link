@@ -12,38 +12,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yP9VQn8/8Pj6iyc8rcm4wrW5Z05W5gxGpn1HD0pUMrcgYG4vkkMROHT3K+dJzK1ZCj6H2UYZIlPz+gDqnmK08Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     :root {
-      --teal: #008080;
-      --navy: #000080;
-      --cyan: #00bcd4;
-      --indigo: indigo;
-      --dark-white: #e8e8e8;
-      --text-primary: #111111;
+      --dark-bg: #0e1a1d;
+      --card-bg: #1a2c30;
+      --teal: #00bfa6;
+      --indigo: #7f5af0;
+      --cyan: #03dac6;
+      --text-light: #ffffff;
+      --text-muted: #b0bec5;
+      --accent: #fcd34d;
     }body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f2f2f2;
-  color: var(--text-primary);
+  background-color: var(--dark-bg);
+  color: var(--text-light);
   line-height: 1.6;
 }
 
 .top-section {
-  background-color: var(--teal);
-  padding: 2.5rem 1rem 2rem;
+  background-color: var(--card-bg);
+  padding: 3rem 1rem 2rem;
   text-align: center;
-  color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 .brand-name {
   font-size: 2.8rem;
   font-weight: 700;
-  color: black;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
   font-size: 1.4rem;
   color: var(--indigo);
-  margin-top: 0.3rem;
   font-style: italic;
 }
 
@@ -58,9 +59,9 @@
 }
 
 .card {
-  background: var(--dark-white);
+  background: var(--card-bg);
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   padding: 1.2rem 1.5rem;
   display: flex;
   align-items: center;
@@ -68,6 +69,11 @@
   min-width: 280px;
   max-width: 360px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 .card i {
@@ -78,20 +84,15 @@
 }
 
 .card strong {
-  color: var(--navy);
+  color: var(--accent);
   display: block;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
-.card span {
+.card span, .card a {
   font-size: 1.05rem;
-  color: var(--text-primary);
-}
-
-.card a {
-  color: var(--navy);
+  color: var(--text-muted);
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .card a:hover {
@@ -99,11 +100,11 @@
 }
 
 footer {
-  background: #f4f4f4;
+  background: #111;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-muted);
   margin-top: 2rem;
 }
 
@@ -155,4 +156,4 @@ footer {
     &copy; 2025 Dynamic Minds Matrix. All rights reserved.
   </footer>
 </body>
-        </html>
+    </html>
